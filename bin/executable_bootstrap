@@ -2,7 +2,7 @@
 
 sudo apt-get update
 sudo apt install -y zsh curl wget tmux git fzf vim net-tools apt-file netcat strace ltrace bwm-ng ripgrep htop fd-find aptitude bpytop rsync lsb-release gnupg ca-certificates
-echo "Updating the yadm repo origin URL"
+
 git config --global user.name kovan
 git config --global user.email "you@example.com"
 
