@@ -8,7 +8,7 @@ export ZSH="$HOME/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="jonathan"
+ZSH_THEME="af-magic"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -111,4 +111,4 @@ export PATH="$PATH:$HOME/Downloads/idea/bin:/home/k/.config/emacs/bin"
 alias backup-zshrc="cd ~/prj/dotfiles && cp ~/.zshrc zshrc && git add zshrc && git commit -m zshrc && git push"
 alias lola="git log --graph --decorate --pretty=oneline --abbrev-commit"
 alias remove_build_deps="sudo apt-get autoremove $(apt-cache showsrc $PACKAGE_NAME | sed -e '/Build-Depends/!d;s/Build-Depends: \|,\|([^)]*),*\|\[[^]]*\]//g')"
-
+alias drop_cache="sudo sh -c \"echo 3 >'/proc/sys/vm/drop_caches' && swapoff -a && swapon -a && printf '\n%s\n' 'Ram-cache and Swap Cleared'\""
