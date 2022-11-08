@@ -108,8 +108,5 @@ setopt hist_ignore_all_dups
 
 
 export PATH="$HOME/.poetry/bin:$HOME/bin:/home/k/.local/bin:$PATH"
-export PATH="$PATH:$HOME/Downloads/idea/bin:/home/k/.config/emacs/bin"
-#export DISPLAY=$(ip route | grep default | awk '{print $3; exit;}'):0.0
-alias backup-zshrc="cd ~/prj/dotfiles && cp ~/.zshrc zshrc && git add zshrc && git commit -m zshrc && git push"
 alias lola="git log --graph --decorate --pretty=oneline --abbrev-commit"
 alias drop_cache="sudo sh -c \"echo 3 >'/proc/sys/vm/drop_caches' && swapoff -a && swapon -a && printf '\n%s\n' 'Ram-cache and Swap Cleared'\""
