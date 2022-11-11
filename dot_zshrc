@@ -102,9 +102,9 @@ export EDITOR='vim'
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-if [ $XDG_SESSION_TYPE == "x11" ]
+if [[ "$XDG_SESSION_TYPE" == "x11" ]]
 then
-	xmodmap
+	xmodmap > /dev/null
 fi	
 
 HISTFILE=~/.zsh_history
