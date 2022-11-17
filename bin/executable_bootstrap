@@ -3,7 +3,7 @@ cd $(chezmoi source-path); git remote set-url origin "git@github.com:kovan/dotfi
 #git clone --depth 1 --single-branch https://github.com/doomemacs/doomemacs ~/.config/emacs
 #~/.config/emacs/bin/doom install
 
-if grep Manjaro /etc/lsb-release 
+if cat /etc/arch-release 
 then
 	INSTALL_CMD="pacman -S --noconfirm"
 else
