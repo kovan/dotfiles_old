@@ -119,3 +119,5 @@ alias drop_cache="sudo sh -c \"echo 3 >'/proc/sys/vm/drop_caches' && swapoff -a 
 alias vi=vim
 alias mapkeys="gsettings set org.gnome.desktop.input-sources xkb-options \"['ctrl:swap_lwin_lctl']\"" 
 alias task=go-task
+
+[ -f "/home/k/.ghcup/env" ] && source "/home/k/.ghcup/env" # ghcup-env
