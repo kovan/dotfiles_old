@@ -1,2 +1,4 @@
 Host chromebook
+	user k
     port 2223
+    hostname 192.168.2.122
