@@ -43,7 +43,7 @@ ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
 # DISABLE_AUTO_TITLE="true"
 
 # Uncomment the following line to enable command auto-correction.
-ENABLE_CORRECTION="true"
+#ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
 # You can also set it to another string to have that shown instead of the default red dots.
@@ -118,6 +118,5 @@ alias lola="git log --graph --decorate --pretty=oneline --abbrev-commit"
 alias drop_cache="sudo sh -c \"echo 3 >'/proc/sys/vm/drop_caches' && swapoff -a && swapon -a && printf '\n%s\n' 'Ram-cache and Swap Cleared'\""
 alias vi=vim
 alias mapkeys="gsettings set org.gnome.desktop.input-sources xkb-options \"['ctrl:swap_lwin_lctl']\"" 
-alias task=go-task
 
 [ -f "/home/k/.ghcup/env" ] && source "/home/k/.ghcup/env" # ghcup-env
