@@ -76,4 +76,4 @@
 ;; they are implemented.
 
 (menu-bar-mode)
-(toggle-frame-maximized)
+;;(toggle-frame-maximized)
