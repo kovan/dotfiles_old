@@ -77,5 +77,5 @@
 
 (menu-bar-mode)
 ;;(toggle-frame-maximized)
-
 (cua-mode 1)
+(add-to-list 'auto-mode-alist '("\\.wisp\\'" . wisp-mode))

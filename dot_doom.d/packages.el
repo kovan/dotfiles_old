@@ -49,5 +49,5 @@
 ;; ...Or *all* packages (NOT RECOMMENDED; will likely break things)
 ;(unpin! t)
 
-
-(package! wisp-mode)
+(package! geiser)
+(package! wisp-mode )
