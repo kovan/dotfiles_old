@@ -77,3 +77,5 @@
 
 (menu-bar-mode)
 ;;(toggle-frame-maximized)
+
+(cua-mode 1)
