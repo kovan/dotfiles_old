@@ -120,4 +120,4 @@ alias vi=vim
 alias mapkeys="gsettings set org.gnome.desktop.input-sources xkb-options \"['ctrl:swap_lwin_lctl']\"" 
 
 [ -f "/home/k/.ghcup/env" ] && source "/home/k/.ghcup/env" # ghcup-env
-export PATH=$PATH:$HOME/.config/emacs/bin
+export PATH=$PATH:$HOME/.config/emacs/bin:/snap/bin
