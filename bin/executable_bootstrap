@@ -1,3 +1,5 @@
+#! /bin/sh
+
 cd $(chezmoi source-path); git remote set-url origin "git@github.com:kovan/dotfiles.git"
 
 #git clone --depth 1 --single-branch https://github.com/doomemacs/doomemacs ~/.config/emacs
@@ -10,16 +12,11 @@ else
 	INSTALL_CMD="apt install -y"
 fi
 
-for pkg in zsh curl wget tmux git fzf vim net-tools apt-file netcat strace ltrace bwm-ng ripgrep htop fd-find aptitude bpytop rsync lsb-release gnupg ca-certificates lsof
+for pkg in fish curl wget tmux git fzf vim net-tools apt-file netcat strace ltrace bwm-ng ripgrep htop fd-find aptitude bpytop rsync lsb-release gnupg ca-certificates lsof
 do
 	sudo $INSTALL_CMD $pkg
 done
 
+curl https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install | fish
 
-sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-cp ~/.zshrc ~/.zshrc.bak
-mv ~/.zshrc.pre-oh-my-zsh ~/.zshrc
-
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
-git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 
