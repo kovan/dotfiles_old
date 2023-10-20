@@ -3,6 +3,8 @@ alias drop_cache "sudo sh -c \"echo 3 >'/proc/sys/vm/drop_caches' && swapoff -a 
 alias vi vim
 alias mapkeys "gsettings set org.gnome.desktop.input-sources xkb-options \"['ctrl:swap_lwin_lctl']\""
 alias sc "sudo systemctl"
+alias pacin "sudo pacman --noconfirm -S"
+alias aptin "sudo apt install"
 
 fish_add_path $HOME/bin
 fish_add_path $HOME/.local/bin
